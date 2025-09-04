@@ -202,9 +202,13 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Directorio para producci�
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 ########################################################
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-# MEDIA_ROOT = BASE_DIR / 'media'
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MEDIA_URL = '/static/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/media')
+
+## MEDIA_ROOT = BASE_DIR / 'media'
 
 # Configuración de sesiones más segura
 SESSION_COOKIE_HTTPONLY = True
