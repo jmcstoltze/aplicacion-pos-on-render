@@ -1,0 +1,114 @@
+{% extends "usuarios/base_dashboard.html" %}
+{% load static %}
+
+{% block dashboard_content %}
+    <!-- Menú Lateral -->
+    <div id="sidebar">
+        <div class="sidebar-header">
+            <h4 style="text-decoration: underline;">Menú de Opciones</h4>
+        </div>
+        <ul class="sidebar-menu">
+
+            <!-- Ventas con submenú -->
+            <li class="has-submenu">
+                <a href="#" class="submenu-toggle">
+                    <i class="bi bi-cart"></i> Ventas
+                    <i class="bi bi-chevron-down submenu-indicator"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="#"><i class="bi bi-calendar-day"></i> Diarias</a></li>
+                    <li><a href="#"><i class="bi bi-calendar-week"></i> Semanales</a></li>
+                    <li><a href="#"><i class="bi bi-calendar-month"></i> Mensuales</a></li>
+                    <li><a href="#"><i class="bi bi-calendar"></i> Anuales</a></li>
+                </ul>
+            </li>
+        
+            <!-- Inventario con submenú - Solo para Jefe de Local y Administrador -->
+            
+            {% if request.user.usuario.rol.nombre_rol == 'Administrador' or request.user.usuario.rol.nombre_rol == 'Jefe de local' %}
+            <li class="has-submenu">
+                <a href="#" class="submenu-toggle">
+                    <i class="bi bi-box-seam"></i> Inventario
+                    <i class="bi bi-chevron-down submenu-indicator"></i>
+                </a>
+                <ul class="submenu">
+
+                    <!-- Editar productos - Solo para Administrador -->
+                    {% if request.user.usuario.rol.nombre_rol == 'Administrador' %} 
+                    <li><a href="{% url 'edicion_productos' %}"><i class="bi bi-pencil-square"></i> Editar productos</a></li>
+                    {% endif %}
+
+                    <!-- Editar stock - Disponible para ammbos roles -->
+                    <li><a href="{% url 'stock_productos' %}"><i class="bi bi-box-arrow-in-down"></i> Editar stock</a></li>
+
+                    <!-- Editar promociones - Solo para Administrador -->
+                    {% if request.user.usuario.rol.nombre_rol == 'Administrador' %} 
+                    <li><a href="#"><i class="bi bi-percent"></i> Editar promociones</a></li>
+                    {% endif %}
+                </ul>
+            </li>
+            {% endif %}
+        
+            <!-- Clientes con submenú -->
+            <li class="has-submenu">
+                <a href="#" class="submenu-toggle">
+                    <i class="bi bi-people"></i> Clientes
+                    <i class="bi bi-chevron-down submenu-indicator"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="#"><i class="bi bi-person-plus"></i> Registrar cliente</a></li>
+                    <li><a href="#"><i class="bi bi-person-lines-fill"></i> Editar cliente</a></li>
+                    <li><a href="#"><i class="bi bi-person-x"></i> Eliminar cliente</a></li>
+                </ul>
+            </li>
+        
+            <!-- Sucursales con submenú -->
+            <li class="has-submenu">
+                <a href="#" class="submenu-toggle">
+                    <i class="bi bi-shop"></i> Sucursales
+                    <i class="bi bi-chevron-down submenu-indicator"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="{% url 'asignacion_sucursales' %}"><i class="bi bi-shop-window"></i> Asignar sucursales</a></li>
+                    <li><a href="{% url 'asignacion_cajas' %}"><i class="bi bi-cash-coin"></i> Asignar cajas</a></li>
+                </ul>
+            </li>
+        
+            <!-- Cerrar sesión -->
+            <li>
+                <a id="logoutLink2" href="{% url 'cerrar_sesion' %}" data-logout-url="{% url 'cerrar_sesion' %}" class="logout-menu-item" onclick="return confirm('¿Está seguro de que desea cerrar sesión?')">
+                    <i class="bi bi-box-arrow-right"></i> Cerrar sesión
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Contenido Principal -->
+    <div class="content" id="content">
+        <div class="container-fluid mt-4">
+            <!-- Card -->
+            <div class="card horizontal-card mb-4" style="margin-left: 15%; margin-top: 9%;">
+                <div class="row g-0">
+                    <!-- Imagen de usuario -->
+                    <div class="col-md-2 d-flex align-items-center justify-content-center">
+                        <i class="bi bi-person-circle fs-1"></i>
+                    </div>
+                    <div class="col-md-10 d-flex align-items-center">
+                    <div class="card-body text-dark"> <!-- Text-dark -->
+                        <a href="#" class="stretched-link text-decoration-none text-dark"> <!-- Text-dark -->                            
+                            <p class="card-text" style="font-size: x-large;">Gestionar ventas</p>
+                            <hr class="border-dark"> <!-- Border-dark -->
+                            <p class="card-text" style="font-size: smaller;">Presione para gestionar ventas</p>
+                        </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+    <!-- Script adicional para esta vista -->
+    <!-- <script src="{% static 'js/dashboard-script.js' %}"></script> -->
+{% endblock %}

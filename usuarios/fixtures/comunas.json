@@ -1,0 +1,2762 @@
+[
+    {
+        "model": "usuarios.comuna",
+        "pk": 1,
+        "fields": {
+            "nombre_comuna": "Iquique",
+            "region": 1
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 2,
+        "fields": {
+            "nombre_comuna": "Alto Hospicio",
+            "region": 1
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 3,
+        "fields": {
+            "nombre_comuna": "Pozo Almonte",
+            "region": 1
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 4,
+        "fields": {
+            "nombre_comuna": "Camiña",
+            "region": 1
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 5,
+        "fields": {
+            "nombre_comuna": "Colchane",
+            "region": 1
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 6,
+        "fields": {
+            "nombre_comuna": "Huara",
+            "region": 1
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 7,
+        "fields": {
+            "nombre_comuna": "Pica",
+            "region": 1
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 8,
+        "fields": {
+            "nombre_comuna": "Antofagasta",
+            "region": 2
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 9,
+        "fields": {
+            "nombre_comuna": "Mejillones",
+            "region": 2
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 10,
+        "fields": {
+            "nombre_comuna": "Sierra Gorda",
+            "region": 2
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 11,
+        "fields": {
+            "nombre_comuna": "Taltal",
+            "region": 2
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 12,
+        "fields": {
+            "nombre_comuna": "Calama",
+            "region": 2
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 13,
+        "fields": {
+            "nombre_comuna": "Ollagüe",
+            "region": 2
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 14,
+        "fields": {
+            "nombre_comuna": "San Pedro de Atacama",
+            "region": 2
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 15,
+        "fields": {
+            "nombre_comuna": "Tocopilla",
+            "region": 2
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 16,
+        "fields": {
+            "nombre_comuna": "María Elena",
+            "region": 2
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 17,
+        "fields": {
+            "nombre_comuna": "Copiapó",
+            "region": 3
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 18,
+        "fields": {
+            "nombre_comuna": "Caldera",
+            "region": 3
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 19,
+        "fields": {
+            "nombre_comuna": "Tierra Amarilla",
+            "region": 3
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 20,
+        "fields": {
+            "nombre_comuna": "Chañaral",
+            "region": 3
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 21,
+        "fields": {
+            "nombre_comuna": "Diego de Almagro",
+            "region": 3
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 22,
+        "fields": {
+            "nombre_comuna": "Vallenar",
+            "region": 3
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 23,
+        "fields": {
+            "nombre_comuna": "Alto del Carmen",
+            "region": 3
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 24,
+        "fields": {
+            "nombre_comuna": "Freirina",
+            "region": 3
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 25,
+        "fields": {
+            "nombre_comuna": "Huasco",
+            "region": 3
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 26,
+        "fields": {
+            "nombre_comuna": "La Serena",
+            "region": 4
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 27,
+        "fields": {
+            "nombre_comuna": "Coquimbo",
+            "region": 4
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 28,
+        "fields": {
+            "nombre_comuna": "Andacollo",
+            "region": 4
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 29,
+        "fields": {
+            "nombre_comuna": "La Higuera",
+            "region": 4
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 30,
+        "fields": {
+            "nombre_comuna": "Paiguano",
+            "region": 4
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 31,
+        "fields": {
+            "nombre_comuna": "Vicuña",
+            "region": 4
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 32,
+        "fields": {
+            "nombre_comuna": "Illapel",
+            "region": 4
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 33,
+        "fields": {
+            "nombre_comuna": "Canela",
+            "region": 4
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 34,
+        "fields": {
+            "nombre_comuna": "Los Vilos",
+            "region": 4
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 35,
+        "fields": {
+            "nombre_comuna": "Salamanca",
+            "region": 4
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 36,
+        "fields": {
+            "nombre_comuna": "Ovalle",
+            "region": 4
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 37,
+        "fields": {
+            "nombre_comuna": "Combarbalá",
+            "region": 4
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 38,
+        "fields": {
+            "nombre_comuna": "Monte Patria",
+            "region": 4
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 39,
+        "fields": {
+            "nombre_comuna": "Punitaqui",
+            "region": 4
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 40,
+        "fields": {
+            "nombre_comuna": "Río Hurtado",
+            "region": 4
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 41,
+        "fields": {
+            "nombre_comuna": "Valparaíso",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 42,
+        "fields": {
+            "nombre_comuna": "Casablanca",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 43,
+        "fields": {
+            "nombre_comuna": "Concón",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 44,
+        "fields": {
+            "nombre_comuna": "Juan Fernández",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 45,
+        "fields": {
+            "nombre_comuna": "Puchuncaví",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 46,
+        "fields": {
+            "nombre_comuna": "Quintero",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 47,
+        "fields": {
+            "nombre_comuna": "Viña del Mar",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 48,
+        "fields": {
+            "nombre_comuna": "Isla de Pascua",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 49,
+        "fields": {
+            "nombre_comuna": "Los Andes",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 50,
+        "fields": {
+            "nombre_comuna": "Calle Larga",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 51,
+        "fields": {
+            "nombre_comuna": "Rinconada",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 52,
+        "fields": {
+            "nombre_comuna": "San Esteban",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 53,
+        "fields": {
+            "nombre_comuna": "La Ligua",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 54,
+        "fields": {
+            "nombre_comuna": "Cabildo",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 55,
+        "fields": {
+            "nombre_comuna": "Papudo",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 56,
+        "fields": {
+            "nombre_comuna": "Petorca",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 57,
+        "fields": {
+            "nombre_comuna": "Zapallar",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 58,
+        "fields": {
+            "nombre_comuna": "Quillota",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 59,
+        "fields": {
+            "nombre_comuna": "Calera",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 60,
+        "fields": {
+            "nombre_comuna": "Hijuelas",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 61,
+        "fields": {
+            "nombre_comuna": "La Cruz",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 62,
+        "fields": {
+            "nombre_comuna": "Nogales",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 63,
+        "fields": {
+            "nombre_comuna": "San Antonio",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 64,
+        "fields": {
+            "nombre_comuna": "Algarrobo",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 65,
+        "fields": {
+            "nombre_comuna": "Cartagena",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 66,
+        "fields": {
+            "nombre_comuna": "El Quisco",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 67,
+        "fields": {
+            "nombre_comuna": "El Tabo",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 68,
+        "fields": {
+            "nombre_comuna": "Santo Domingo",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 69,
+        "fields": {
+            "nombre_comuna": "San Felipe",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 70,
+        "fields": {
+            "nombre_comuna": "Catemu",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 71,
+        "fields": {
+            "nombre_comuna": "Llaillay",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 72,
+        "fields": {
+            "nombre_comuna": "Panquehue",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 73,
+        "fields": {
+            "nombre_comuna": "Putaendo",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 74,
+        "fields": {
+            "nombre_comuna": "Santa María",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 75,
+        "fields": {
+            "nombre_comuna": "Quilpué",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 76,
+        "fields": {
+            "nombre_comuna": "Limache",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 77,
+        "fields": {
+            "nombre_comuna": "Olmué",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 78,
+        "fields": {
+            "nombre_comuna": "Villa Alemana",
+            "region": 5
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 79,
+        "fields": {
+            "nombre_comuna": "Rancagua",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 80,
+        "fields": {
+            "nombre_comuna": "Codegua",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 81,
+        "fields": {
+            "nombre_comuna": "Coinco",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 82,
+        "fields": {
+            "nombre_comuna": "Coltauco",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 83,
+        "fields": {
+            "nombre_comuna": "Doñihue",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 84,
+        "fields": {
+            "nombre_comuna": "Graneros",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 85,
+        "fields": {
+            "nombre_comuna": "Las Cabras",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 86,
+        "fields": {
+            "nombre_comuna": "Machalí",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 87,
+        "fields": {
+            "nombre_comuna": "Mostazal",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 88,
+        "fields": {
+            "nombre_comuna": "Olivar",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 89,
+        "fields": {
+            "nombre_comuna": "Peumo",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 90,
+        "fields": {
+            "nombre_comuna": "Pichidegua",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 91,
+        "fields": {
+            "nombre_comuna": "Quinta de Tilcoco",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 92,
+        "fields": {
+            "nombre_comuna": "Rengo",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 93,
+        "fields": {
+            "nombre_comuna": "Requínoa",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 94,
+        "fields": {
+            "nombre_comuna": "San Vicente",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 95,
+        "fields": {
+            "nombre_comuna": "Pichilemu",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 96,
+        "fields": {
+            "nombre_comuna": "La Estrella",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 97,
+        "fields": {
+            "nombre_comuna": "Litueche",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 98,
+        "fields": {
+            "nombre_comuna": "Marchihue",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 99,
+        "fields": {
+            "nombre_comuna": "Navidad",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 100,
+        "fields": {
+            "nombre_comuna": "Paredones",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 101,
+        "fields": {
+            "nombre_comuna": "San Fernando",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 102,
+        "fields": {
+            "nombre_comuna": "Chépica",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 103,
+        "fields": {
+            "nombre_comuna": "Chimbarongo",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 104,
+        "fields": {
+            "nombre_comuna": "Lolol",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 105,
+        "fields": {
+            "nombre_comuna": "Nancagua",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 106,
+        "fields": {
+            "nombre_comuna": "Palmilla",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 107,
+        "fields": {
+            "nombre_comuna": "Peralillo",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 108,
+        "fields": {
+            "nombre_comuna": "Placilla",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 109,
+        "fields": {
+            "nombre_comuna": "Pumanque",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 110,
+        "fields": {
+            "nombre_comuna": "Santa Cruz",
+            "region": 6
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 111,
+        "fields": {
+            "nombre_comuna": "Talca",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 112,
+        "fields": {
+            "nombre_comuna": "Constitución",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 113,
+        "fields": {
+            "nombre_comuna": "Curepto",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 114,
+        "fields": {
+            "nombre_comuna": "Empedrado",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 115,
+        "fields": {
+            "nombre_comuna": "Maule",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 116,
+        "fields": {
+            "nombre_comuna": "Pelarco",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 117,
+        "fields": {
+            "nombre_comuna": "Pencahue",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 118,
+        "fields": {
+            "nombre_comuna": "Río Claro",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 119,
+        "fields": {
+            "nombre_comuna": "San Clemente",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 120,
+        "fields": {
+            "nombre_comuna": "San Rafael",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 121,
+        "fields": {
+            "nombre_comuna": "Cauquenes",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 122,
+        "fields": {
+            "nombre_comuna": "Chanco",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 123,
+        "fields": {
+            "nombre_comuna": "Pelluhue",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 124,
+        "fields": {
+            "nombre_comuna": "Curicó",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 125,
+        "fields": {
+            "nombre_comuna": "Hualañé",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 126,
+        "fields": {
+            "nombre_comuna": "Licantén",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 127,
+        "fields": {
+            "nombre_comuna": "Molina",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 128,
+        "fields": {
+            "nombre_comuna": "Rauco",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 129,
+        "fields": {
+            "nombre_comuna": "Romeral",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 130,
+        "fields": {
+            "nombre_comuna": "Sagrada Familia",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 131,
+        "fields": {
+            "nombre_comuna": "Teno",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 132,
+        "fields": {
+            "nombre_comuna": "Vichuquén",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 133,
+        "fields": {
+            "nombre_comuna": "Linares",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 134,
+        "fields": {
+            "nombre_comuna": "Colbún",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 135,
+        "fields": {
+            "nombre_comuna": "Longaví",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 136,
+        "fields": {
+            "nombre_comuna": "Parral",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 137,
+        "fields": {
+            "nombre_comuna": "Retiro",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 138,
+        "fields": {
+            "nombre_comuna": "San Javier",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 139,
+        "fields": {
+            "nombre_comuna": "Villa Alegre",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 140,
+        "fields": {
+            "nombre_comuna": "Yerbas Buenas",
+            "region": 7
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 141,
+        "fields": {
+            "nombre_comuna": "Concepción",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 142,
+        "fields": {
+            "nombre_comuna": "Coronel",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 143,
+        "fields": {
+            "nombre_comuna": "Chiguayante",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 144,
+        "fields": {
+            "nombre_comuna": "Florida",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 145,
+        "fields": {
+            "nombre_comuna": "Hualqui",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 146,
+        "fields": {
+            "nombre_comuna": "Lota",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 147,
+        "fields": {
+            "nombre_comuna": "Penco",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 148,
+        "fields": {
+            "nombre_comuna": "San Pedro de la Paz",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 149,
+        "fields": {
+            "nombre_comuna": "Santa Juana",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 150,
+        "fields": {
+            "nombre_comuna": "Talcahuano",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 151,
+        "fields": {
+            "nombre_comuna": "Tomé",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 152,
+        "fields": {
+            "nombre_comuna": "Hualpén",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 153,
+        "fields": {
+            "nombre_comuna": "Lebu",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 154,
+        "fields": {
+            "nombre_comuna": "Arauco",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 155,
+        "fields": {
+            "nombre_comuna": "Cañete",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 156,
+        "fields": {
+            "nombre_comuna": "Contulmo",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 157,
+        "fields": {
+            "nombre_comuna": "Curanilahue",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 158,
+        "fields": {
+            "nombre_comuna": "Los Álamos",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 159,
+        "fields": {
+            "nombre_comuna": "Tirúa",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 160,
+        "fields": {
+            "nombre_comuna": "Los Ángeles",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 161,
+        "fields": {
+            "nombre_comuna": "Antuco",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 162,
+        "fields": {
+            "nombre_comuna": "Cabrero",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 163,
+        "fields": {
+            "nombre_comuna": "Laja",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 164,
+        "fields": {
+            "nombre_comuna": "Mulchén",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 165,
+        "fields": {
+            "nombre_comuna": "Nacimiento",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 166,
+        "fields": {
+            "nombre_comuna": "Negrete",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 167,
+        "fields": {
+            "nombre_comuna": "Quilaco",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 168,
+        "fields": {
+            "nombre_comuna": "Quilleco",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 169,
+        "fields": {
+            "nombre_comuna": "San Rosendo",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 170,
+        "fields": {
+            "nombre_comuna": "Santa Bárbara",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 171,
+        "fields": {
+            "nombre_comuna": "Tucapel",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 172,
+        "fields": {
+            "nombre_comuna": "Yumbel",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 173,
+        "fields": {
+            "nombre_comuna": "Alto Biobío",
+            "region": 8
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 174,
+        "fields": {
+            "nombre_comuna": "Temuco",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 175,
+        "fields": {
+            "nombre_comuna": "Carahue",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 176,
+        "fields": {
+            "nombre_comuna": "Cunco",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 177,
+        "fields": {
+            "nombre_comuna": "Curarrehue",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 178,
+        "fields": {
+            "nombre_comuna": "Freire",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 179,
+        "fields": {
+            "nombre_comuna": "Galvarino",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 180,
+        "fields": {
+            "nombre_comuna": "Gorbea",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 181,
+        "fields": {
+            "nombre_comuna": "Lautaro",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 182,
+        "fields": {
+            "nombre_comuna": "Loncoche",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 183,
+        "fields": {
+            "nombre_comuna": "Melipeuco",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 184,
+        "fields": {
+            "nombre_comuna": "Nueva Imperial",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 185,
+        "fields": {
+            "nombre_comuna": "Padre las Casas",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 186,
+        "fields": {
+            "nombre_comuna": "Perquenco",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 187,
+        "fields": {
+            "nombre_comuna": "Pitrufquén",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 188,
+        "fields": {
+            "nombre_comuna": "Pucón",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 189,
+        "fields": {
+            "nombre_comuna": "Saavedra",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 190,
+        "fields": {
+            "nombre_comuna": "Teodoro Schmidt",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 191,
+        "fields": {
+            "nombre_comuna": "Toltén",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 192,
+        "fields": {
+            "nombre_comuna": "Vilcún",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 193,
+        "fields": {
+            "nombre_comuna": "Villarrica",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 194,
+        "fields": {
+            "nombre_comuna": "Cholchol",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 195,
+        "fields": {
+            "nombre_comuna": "Angol",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 196,
+        "fields": {
+            "nombre_comuna": "Collipulli",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 197,
+        "fields": {
+            "nombre_comuna": "Curacautín",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 198,
+        "fields": {
+            "nombre_comuna": "Ercilla",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 199,
+        "fields": {
+            "nombre_comuna": "Lonquimay",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 200,
+        "fields": {
+            "nombre_comuna": "Los Sauces",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 201,
+        "fields": {
+            "nombre_comuna": "Lumaco",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 202,
+        "fields": {
+            "nombre_comuna": "Purén",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 203,
+        "fields": {
+            "nombre_comuna": "Renaico",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 204,
+        "fields": {
+            "nombre_comuna": "Traiguén",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 205,
+        "fields": {
+            "nombre_comuna": "Victoria",
+            "region": 9
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 206,
+        "fields": {
+            "nombre_comuna": "Puerto Montt",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 207,
+        "fields": {
+            "nombre_comuna": "Calbuco",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 208,
+        "fields": {
+            "nombre_comuna": "Cochamó",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 209,
+        "fields": {
+            "nombre_comuna": "Fresia",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 210,
+        "fields": {
+            "nombre_comuna": "Frutillar",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 211,
+        "fields": {
+            "nombre_comuna": "Los Muermos",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 212,
+        "fields": {
+            "nombre_comuna": "Llanquihue",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 213,
+        "fields": {
+            "nombre_comuna": "Maullín",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 214,
+        "fields": {
+            "nombre_comuna": "Puerto Varas",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 215,
+        "fields": {
+            "nombre_comuna": "Castro",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 216,
+        "fields": {
+            "nombre_comuna": "Ancud",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 217,
+        "fields": {
+            "nombre_comuna": "Chonchi",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 218,
+        "fields": {
+            "nombre_comuna": "Curaco de Vélez",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 219,
+        "fields": {
+            "nombre_comuna": "Dalcahue",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 220,
+        "fields": {
+            "nombre_comuna": "Puqueldón",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 221,
+        "fields": {
+            "nombre_comuna": "Queilén",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 222,
+        "fields": {
+            "nombre_comuna": "Quellón",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 223,
+        "fields": {
+            "nombre_comuna": "Quemchi",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 224,
+        "fields": {
+            "nombre_comuna": "Quinchao",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 225,
+        "fields": {
+            "nombre_comuna": "Osorno",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 226,
+        "fields": {
+            "nombre_comuna": "Puerto Octay",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 227,
+        "fields": {
+            "nombre_comuna": "Purranque",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 228,
+        "fields": {
+            "nombre_comuna": "Puyehue",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 229,
+        "fields": {
+            "nombre_comuna": "Río Negro",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 230,
+        "fields": {
+            "nombre_comuna": "San Juan de la Costa",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 231,
+        "fields": {
+            "nombre_comuna": "San Pablo",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 232,
+        "fields": {
+            "nombre_comuna": "Chaitén",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 233,
+        "fields": {
+            "nombre_comuna": "Futaleufú",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 234,
+        "fields": {
+            "nombre_comuna": "Hualaihué",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 235,
+        "fields": {
+            "nombre_comuna": "Palena",
+            "region": 10
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 236,
+        "fields": {
+            "nombre_comuna": "Coihaique",
+            "region": 11
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 237,
+        "fields": {
+            "nombre_comuna": "Lago Verde",
+            "region": 11
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 238,
+        "fields": {
+            "nombre_comuna": "Aisén",
+            "region": 11
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 239,
+        "fields": {
+            "nombre_comuna": "Cisnes",
+            "region": 11
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 240,
+        "fields": {
+            "nombre_comuna": "Guaitecas",
+            "region": 11
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 241,
+        "fields": {
+            "nombre_comuna": "Cochrane",
+            "region": 11
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 242,
+        "fields": {
+            "nombre_comuna": "O'Higgins",
+            "region": 11
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 243,
+        "fields": {
+            "nombre_comuna": "Tortel",
+            "region": 11
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 244,
+        "fields": {
+            "nombre_comuna": "Chile Chico",
+            "region": 11
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 245,
+        "fields": {
+            "nombre_comuna": "Río Ibáñez",
+            "region": 11
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 246,
+        "fields": {
+            "nombre_comuna": "Punta Arenas",
+            "region": 12
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 247,
+        "fields": {
+            "nombre_comuna": "Laguna Blanca",
+            "region": 12
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 248,
+        "fields": {
+            "nombre_comuna": "Río Verde",
+            "region": 12
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 249,
+        "fields": {
+            "nombre_comuna": "San Gregorio",
+            "region": 12
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 250,
+        "fields": {
+            "nombre_comuna": "Cabo de Hornos (Ex Navarino)",
+            "region": 12
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 251,
+        "fields": {
+            "nombre_comuna": "Antártica",
+            "region": 12
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 252,
+        "fields": {
+            "nombre_comuna": "Porvenir",
+            "region": 12
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 253,
+        "fields": {
+            "nombre_comuna": "Primavera",
+            "region": 12
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 254,
+        "fields": {
+            "nombre_comuna": "Timaukel",
+            "region": 12
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 255,
+        "fields": {
+            "nombre_comuna": "Natales",
+            "region": 12
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 256,
+        "fields": {
+            "nombre_comuna": "Torres del Paine",
+            "region": 12
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 257,
+        "fields": {
+            "nombre_comuna": "Cerrillos",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 258,
+        "fields": {
+            "nombre_comuna": "Cerro Navia",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 259,
+        "fields": {
+            "nombre_comuna": "Conchalí",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 260,
+        "fields": {
+            "nombre_comuna": "El Bosque",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 261,
+        "fields": {
+            "nombre_comuna": "Estación Central",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 262,
+        "fields": {
+            "nombre_comuna": "Huechuraba",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 263,
+        "fields": {
+            "nombre_comuna": "Independencia",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 264,
+        "fields": {
+            "nombre_comuna": "La Cisterna",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 265,
+        "fields": {
+            "nombre_comuna": "La Florida",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 266,
+        "fields": {
+            "nombre_comuna": "La Granja",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 267,
+        "fields": {
+            "nombre_comuna": "La Pintana",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 268,
+        "fields": {
+            "nombre_comuna": "La Reina",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 269,
+        "fields": {
+            "nombre_comuna": "Las Condes",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 270,
+        "fields": {
+            "nombre_comuna": "Lo Barnechea",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 271,
+        "fields": {
+            "nombre_comuna": "Lo Espejo",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 272,
+        "fields": {
+            "nombre_comuna": "Lo Prado",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 273,
+        "fields": {
+            "nombre_comuna": "Macul",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 274,
+        "fields": {
+            "nombre_comuna": "Maipú",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 275,
+        "fields": {
+            "nombre_comuna": "Ñuñoa",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 276,
+        "fields": {
+            "nombre_comuna": "Pedro Aguirre Cerda",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 277,
+        "fields": {
+            "nombre_comuna": "Peñalolén",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 278,
+        "fields": {
+            "nombre_comuna": "Providencia",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 279,
+        "fields": {
+            "nombre_comuna": "Pudahuel",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 280,
+        "fields": {
+            "nombre_comuna": "Quilicura",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 281,
+        "fields": {
+            "nombre_comuna": "Quinta Normal",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 282,
+        "fields": {
+            "nombre_comuna": "Recoleta",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 283,
+        "fields": {
+            "nombre_comuna": "Renca",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 284,
+        "fields": {
+            "nombre_comuna": "Santiago",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 285,
+        "fields": {
+            "nombre_comuna": "San Joaquín",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 286,
+        "fields": {
+            "nombre_comuna": "San Miguel",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 287,
+        "fields": {
+            "nombre_comuna": "San Ramón",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 288,
+        "fields": {
+            "nombre_comuna": "Vitacura",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 289,
+        "fields": {
+            "nombre_comuna": "Puente Alto",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 290,
+        "fields": {
+            "nombre_comuna": "Pirque",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 291,
+        "fields": {
+            "nombre_comuna": "San José de Maipo",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 292,
+        "fields": {
+            "nombre_comuna": "Colina",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 293,
+        "fields": {
+            "nombre_comuna": "Lampa",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 294,
+        "fields": {
+            "nombre_comuna": "Tiltil",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 295,
+        "fields": {
+            "nombre_comuna": "San Bernardo",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 296,
+        "fields": {
+            "nombre_comuna": "Buin",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 297,
+        "fields": {
+            "nombre_comuna": "Calera de Tango",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 298,
+        "fields": {
+            "nombre_comuna": "Paine",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 299,
+        "fields": {
+            "nombre_comuna": "Melipilla",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 300,
+        "fields": {
+            "nombre_comuna": "Alhué",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 301,
+        "fields": {
+            "nombre_comuna": "Curacaví",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 302,
+        "fields": {
+            "nombre_comuna": "María Pinto",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 303,
+        "fields": {
+            "nombre_comuna": "San Pedro",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 304,
+        "fields": {
+            "nombre_comuna": "Talagante",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 305,
+        "fields": {
+            "nombre_comuna": "El Monte",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 306,
+        "fields": {
+            "nombre_comuna": "Isla de Maipo",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 307,
+        "fields": {
+            "nombre_comuna": "Padre Hurtado",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 308,
+        "fields": {
+            "nombre_comuna": "Peñaflor",
+            "region": 13
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 309,
+        "fields": {
+            "nombre_comuna": "Valdivia",
+            "region": 14
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 310,
+        "fields": {
+            "nombre_comuna": "Corral",
+            "region": 14
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 311,
+        "fields": {
+            "nombre_comuna": "Lanco",
+            "region": 14
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 312,
+        "fields": {
+            "nombre_comuna": "Los Lagos",
+            "region": 14
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 313,
+        "fields": {
+            "nombre_comuna": "Máfil",
+            "region": 14
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 314,
+        "fields": {
+            "nombre_comuna": "Mariquina",
+            "region": 14
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 315,
+        "fields": {
+            "nombre_comuna": "Paillaco",
+            "region": 14
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 316,
+        "fields": {
+            "nombre_comuna": "Panguipulli",
+            "region": 14
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 317,
+        "fields": {
+            "nombre_comuna": "La Unión",
+            "region": 14
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 318,
+        "fields": {
+            "nombre_comuna": "Futrono",
+            "region": 14
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 319,
+        "fields": {
+            "nombre_comuna": "Lago Ranco",
+            "region": 14
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 320,
+        "fields": {
+            "nombre_comuna": "Río Bueno",
+            "region": 14
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 321,
+        "fields": {
+            "nombre_comuna": "Arica",
+            "region": 15
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 322,
+        "fields": {
+            "nombre_comuna": "Camarones",
+            "region": 15
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 323,
+        "fields": {
+            "nombre_comuna": "Putre",
+            "region": 15
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 324,
+        "fields": {
+            "nombre_comuna": "General Lagos",
+            "region": 15
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 325,
+        "fields": {
+            "nombre_comuna": "Cobquecura",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 326,
+        "fields": {
+            "nombre_comuna": "Coelemu",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 327,
+        "fields": {
+            "nombre_comuna": "Ninhue",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 328,
+        "fields": {
+            "nombre_comuna": "Portezuelo",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 329,
+        "fields": {
+            "nombre_comuna": "Quirihue",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 330,
+        "fields": {
+            "nombre_comuna": "Ránquil",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 331,
+        "fields": {
+            "nombre_comuna": "Treguaco",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 332,
+        "fields": {
+            "nombre_comuna": "Bulnes",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 333,
+        "fields": {
+            "nombre_comuna": "Chillán Viejo",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 334,
+        "fields": {
+            "nombre_comuna": "Chillán",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 335,
+        "fields": {
+            "nombre_comuna": "El Carmen",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 336,
+        "fields": {
+            "nombre_comuna": "Pemuco",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 337,
+        "fields": {
+            "nombre_comuna": "Pinto",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 338,
+        "fields": {
+            "nombre_comuna": "Quillón",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 339,
+        "fields": {
+            "nombre_comuna": "San Ignacio",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 340,
+        "fields": {
+            "nombre_comuna": "Yungay",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 341,
+        "fields": {
+            "nombre_comuna": "Coihueco",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 342,
+        "fields": {
+            "nombre_comuna": "Ñiquén",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 343,
+        "fields": {
+            "nombre_comuna": "San Carlos",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 344,
+        "fields": {
+            "nombre_comuna": "San Fabián",
+            "region": 16
+        }
+    },
+    {
+        "model": "usuarios.comuna",
+        "pk": 345,
+        "fields": {
+            "nombre_comuna": "San Nicolás",
+            "region": 16
+        }
+    }    
+]

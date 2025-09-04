@@ -1,0 +1,35 @@
+[
+    {
+        "model": "comercio.bodega",
+        "pk": 1,
+        "fields": {
+            "nombre_bodega": "Bodega Central",
+            "es_principal": true,
+            "sucursal_id": 1
+        }
+    },
+    {
+        "model": "comercio.bodega",
+        "pk": 2,
+        "fields": {
+            "nombre_bodega": "Bodega Norte",
+            "sucursal_id": 2
+        }
+    },
+    {
+        "model": "comercio.bodega",
+        "pk": 3,
+        "fields": {
+            "nombre_bodega": "Bodega Oriente",
+            "sucursal_id": 3
+        }
+    },
+    {
+        "model": "comercio.bodega",
+        "pk": 4,
+        "fields": {
+            "nombre_bodega": "Bodega Sur",
+            "sucursal_id": 4
+        }
+    }
+]

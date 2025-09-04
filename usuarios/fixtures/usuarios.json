@@ -1,0 +1,146 @@
+[
+    {
+        "model": "usuarios.usuario",
+        "pk": 1,
+        "fields": {
+            "usuario": 2,
+            "rut": "16207968-9",
+            "nombres": "José Manuel",
+            "ap_paterno": "Contreras",
+            "ap_materno": "Stoltze",
+            "email": "jmcontreras.stoltze@gmail.com",
+            "telefono": "+569 9635 2539",
+            "direccion": "Av de Prueba 123 Depto 456",
+            "comuna": 275,
+            "rol": 1
+        }
+    },
+    {
+        "model": "usuarios.usuario",
+        "pk": 2,
+        "fields": {
+            "usuario": 3,
+            "rut": "12345678-9",
+            "nombres": "Pamela Alejandra",
+            "ap_paterno": "Martinez",
+            "ap_materno": "Rosales",
+            "email": "pamela.martinez@gmail.com",
+            "telefono": "+569 8888 7777",
+            "direccion": "Av de Prueba 456 Depto 789",
+            "comuna": 278,
+            "rol": 2
+        }
+    },
+    {
+        "model": "usuarios.usuario",
+        "pk": 3,
+        "fields": {
+            "usuario": 4,
+            "rut": "12123456-7",
+            "nombres": "Steven",
+            "ap_paterno": "Stevenson",
+            "ap_materno": "Robertson",
+            "email": "steven.robertson@gmail.com",
+            "telefono": "+569 6666 5555",
+            "direccion": "Av de Prueba 789",
+            "comuna": 277,
+            "rol": 2
+        }
+    },
+    {
+        "model": "usuarios.usuario",
+        "pk": 4,
+        "fields": {
+            "usuario": 5,
+            "rut": "11222333-4",
+            "nombres": "Carlos",
+            "ap_paterno": "Pérez",
+            "ap_materno": "Millas",
+            "email": "carlos.perez@gmail.com",
+            "telefono": "+569 9999 8888",
+            "direccion": "Av de Prueba 222",
+            "comuna": 278,
+            "rol": 2
+        }
+    },
+    {
+        "model": "usuarios.usuario",
+        "pk": 5,
+        "fields": {
+            "usuario": 6,
+            "rut": "11555666-7",
+            "nombres": "Lucía",
+            "ap_paterno": "Valdes",
+            "ap_materno": "Valdes",
+            "email": "lucia.valdes@gmail.com",
+            "telefono": "+569 7777 5555",
+            "direccion": "Av de Prueba 333",
+            "comuna": 274,
+            "rol": 2
+        }
+    },
+    {
+        "model": "usuarios.usuario",
+        "pk": 6,
+        "fields": {
+            "usuario": 7,
+            "rut": "15444333-2",
+            "nombres": "Tadeo Miguel",
+            "ap_paterno": "García",
+            "ap_materno": "Ruz",
+            "email": "tadeo.garcia@gmail.com",
+            "telefono": "+569 8877 6655",
+            "direccion": "Av de Prueba 996",
+            "comuna": 278,
+            "rol": 2
+        }
+    },
+    {
+        "model": "usuarios.usuario",
+        "pk": 7,
+        "fields": {
+            "usuario": 8,
+            "rut": "16555444-3",
+            "nombres": "Daniela Andrea",
+            "ap_paterno": "Ferreira",
+            "ap_materno": "López",
+            "email": "daniela.ferreira@gmail.com",
+            "telefono": "+569 8877 6655",
+            "direccion": "Av de Prueba 555",
+            "comuna": 263,
+            "rol": 3
+        }
+    },
+    {
+        "model": "usuarios.usuario",
+        "pk": 8,
+        "fields": {
+            "usuario": 9,
+            "rut": "17888999-1",
+            "nombres": "Sara Alejandra",
+            "ap_paterno": "Milla",
+            "ap_materno": "Contreras",
+            "email": "sara.milla@gmail.com",
+            "telefono": "+569 2222 4444",
+            "direccion": "Av de Prueba 1256 depto 406",
+            "comuna": 264,
+            "rol": 3
+        }
+    },
+    {
+        "model": "usuarios.usuario",
+        "pk": 9,
+        "fields": {
+            "usuario": 10,
+            "rut": "15345678-9",
+            "nombres": "Manuel José",
+            "ap_paterno": "Ayala",
+            "ap_materno": "Jaramillo",
+            "email": "manuel.ayala@gmail.com",
+            "telefono": "+569 2222 4444",
+            "direccion": "Av de Prueba 308 depto 20",
+            "comuna": 267,
+            "rol": 3
+        }
+    }
+]

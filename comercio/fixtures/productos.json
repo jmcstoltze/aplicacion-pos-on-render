@@ -1,0 +1,240 @@
+[
+    {
+        "model": "comercio.producto",
+        "pk": 1,
+        "fields": {
+            "sku": "GTR-IBZ-AS53",
+            "codigo_barra": "0093864876234",
+            "categoria_id": 1,
+            "nombre_producto": "Guitarra eléctrica Ibanez AS53",
+            "nombre_abreviado": "Guit Ibanez AS53",
+            "descripcion": "Guitarra semi-hueca con cuerpo de tilo/arce, mástil de caoba, diapasón de jatoba. Pastillas Classic Elite (humbucker puente + single mástil), 3 controles, selector 3 posiciones, puente ART-1. Acabado Tobacco Flat.",
+            "precio_venta": 599000,
+            "disponible": true,
+            "imagen": "files_storage/productos/2025/06/30/01-guitarra-electrica-ibanez.png",
+            "created_at": "2025-06-30T14:00:00Z",
+            "updated_at": "2025-06-30T14:30:00Z"
+        }
+    },
+    {
+        "model": "comercio.producto",
+        "pk": 2,
+        "fields": {
+            "sku": "GTR-JCK-JS11",
+            "codigo_barra": "0087564321098",
+            "categoria_id": 1,
+            "nombre_producto": "Guitarra eléctrica Jackson JS11",
+            "nombre_abreviado": "Guit Jackson JS11",
+            "descripcion": "Guitarra sólida tipo Dinky, cuerpo álamo, mástil arce, diapasón laurel. Pastillas Jackson High Output (HSS), selector 5 pos, controles volumen/tono. Puente tremolo, clavijero sealed die-cast. Acabado Black Satin.",
+            "precio_venta": 399000,
+            "disponible": true,
+            "imagen": "files_storage/productos/2025/06/30/02-guitarra-electrica-jackson.png",
+            "created_at": "2025-06-30T14:00:00Z",
+            "updated_at": "2025-06-30T14:30:00Z"
+        }
+    },
+    {
+        "model": "comercio.producto",
+        "pk": 3,
+        "fields": {
+            "sku": "BAJ-IBZ-GSR185",
+            "codigo_barra": "0093864876256",
+            "categoria_id": 1,
+            "nombre_producto": "Bajo eléctrico Ibanez GSR185",
+            "nombre_abreviado": "Bajo Ibnz GSR185",
+            "descripcion": "Bajo 4 cuerdas, cuerpo agathis, mástil maple. Pastillas Dynamix P/J, controles independientes, tono activo/pasivo. Escala 34\", separación 19mm. Puente B10. Acabado Brown Mahogany.",
+            "precio_venta": 489000,
+            "disponible": true,
+            "imagen": "files_storage/productos/2025/06/30/03-bajo-electrico-ibanez.png",
+            "created_at": "2025-06-30T14:00:00Z",
+            "updated_at": "2025-06-30T14:30:00Z"
+        }
+    },
+    {
+        "model": "comercio.producto",
+        "pk": 4,
+        "fields": {
+            "sku": "BAJ-YMH-BB235",
+            "codigo_barra": "0087564321129",
+            "categoria_id": 1,
+            "nombre_producto": "Bajo eléctrico Yamaha BB235",
+            "nombre_abreviado": "Bajo Ymha BB235",
+            "descripcion": "Bajo serie BB, cuerpo aliso, mástil arce. Pastillas split P + single J, controles independientes, tono pasivo. Escala 34\". Puente tradicional metal. Acabado Black.",
+            "precio_venta": 529000,
+            "disponible": true,
+            "imagen": "files_storage/productos/2025/06/30/04-bajo-electrico-yamaha.png",
+            "created_at": "2025-06-30T14:00:00Z",
+            "updated_at": "2025-06-30T14:30:00Z"
+        }
+    },
+    {
+        "model": "comercio.producto",
+        "pk": 5,
+        "fields": {
+            "sku": "AMP-LAN-LX35R",
+            "codigo_barra": "0078564321150",
+            "categoria_id": 2,
+            "nombre_producto": "Amplificador de guitarra Laney LX35R",
+            "nombre_abreviado": "Ampli Laney LX35R",
+            "descripcion": "Amplificador 35W, parlante 10\". 2 canales (Clean/Drive), EQ 3 bandas, reverb, salida auriculares. Conexión auxiliar. Footswitch opcional. Compacto y robusto.",
+            "precio_venta": 899000,
+            "disponible": true,
+            "imagen": "files_storage/productos/2025/06/30/05-amp-laney-guitarra-electrica.png",
+            "created_at": "2025-06-30T14:00:00Z",
+            "updated_at": "2025-06-30T14:30:00Z"
+        }
+    },
+    {
+        "model": "comercio.producto",
+        "pk": 6,
+        "fields": {
+            "sku": "AMP-L6-V60",
+            "codigo_barra": "0078564321181",
+            "categoria_id": 2,
+            "nombre_producto": "Amplificador de guitarra Line 6 V60",
+            "nombre_abreviado": "Ampli Ln 6 V60",
+            "descripcion": "Amplificador 60W, parlante 12\". 4 canales, efectos integrados (chorus/delay/reverb), EQ 3 bandas, salida XLR. Bluetooth para edición móvil. Incluye pedal opcional.",
+            "precio_venta": 1299000,
+            "disponible": true,
+            "imagen": "files_storage/productos/2025/06/30/06-amp-line6-guitarra-electrica.png",
+            "created_at": "2025-06-30T14:00:00Z",
+            "updated_at": "2025-06-30T14:30:00Z"
+        }
+    },
+    {
+        "model": "comercio.producto",
+        "pk": 7,
+        "fields": {
+            "sku": "AMP-FND-RUM40",
+            "codigo_barra": "0078564321211",
+            "categoria_id": 2,
+            "nombre_producto": "Amplificador de bajo Fender Rumble 40",
+            "nombre_abreviado": "Ampli Rmbl 40",
+            "descripcion": "Amplificador bajo 40W, parlante 10\". EQ 3 bandas + contorno, entrada aux, salidas auriculares/XLR. Overdrive integrado. Ultraligero (18 lbs).",
+            "precio_venta": 1099000,
+            "disponible": true,
+            "imagen": "files_storage/productos/2025/06/30/07-amp-fender-bajo.png",
+            "created_at": "2025-06-30T14:00:00Z",
+            "updated_at": "2025-06-30T14:30:00Z"
+        }
+    },
+    {
+        "model": "comercio.producto",
+        "pk": 8,
+        "fields": {
+            "sku": "AMP-AMP-RCK115",
+            "codigo_barra": "0078564321242",
+            "categoria_id": 2,
+            "nombre_producto": "Amplificador de bajo Ampeg Rocket 115",
+            "nombre_abreviado": "Ampli Ampeg RCK115",
+            "descripcion": "Amplificador profesional 200W, parlante 15\". EQ 4 bandas, compresión integrada, salida XLR balanced. Ruedas para transporte. Sonido Ampeg clásico.",
+            "precio_venta": 2499000,
+            "disponible": true,
+            "imagen": "files_storage/productos/2025/06/30/08-amp-ampeg-bajo.png",
+            "created_at": "2025-06-30T14:00:00Z",
+            "updated_at": "2025-06-30T14:30:00Z"
+        }
+    },
+    {
+        "model": "comercio.producto",
+        "pk": 9,
+        "fields": {
+            "sku": "INT-FOC-4I4",
+            "codigo_barra": "0067564321273",
+            "categoria_id": 3,
+            "nombre_producto": "Focusrite Scarlett 4i4 - Interfaz USB",
+            "nombre_abreviado": "Interfz Focsrt 4i4",
+            "descripcion": "Interfaz USB 3.0, 4 entradas (2 XLR/TRS combo), 4 salidas. 24-bit/192kHz. Bundle software (Ableton Live Lite + plugins). Compatible Mac/PC/iOS. Diseño metálico.",
+            "precio_venta": 299000,
+            "disponible": true,
+            "imagen": "files_storage/productos/2025/06/30/09-interfaz-audio-focusrite.png",
+            "created_at": "2025-06-30T14:00:00Z",
+            "updated_at": "2025-06-30T14:30:00Z"
+        }
+    },
+    {
+        "model": "comercio.producto",
+        "pk": 10,
+        "fields": {
+            "sku": "MEZ-NOV-300WX2",
+            "codigo_barra": "0067564321303",
+            "categoria_id": 3,
+            "nombre_producto": "Novik Mezcladora 300WX2",
+            "nombre_abreviado": "Mixer Novik 300WX2",
+            "descripcion": "Mezcladora 8 canales (6 XLR + 2 estéreo), 300W x 2 salida. EQ 3 bandas, efectos DSP, salidas XLR/RCA, entrada USB. Incluye micrófono básico. Ideal eventos pequeños.",
+            "precio_venta": 899000,
+            "disponible": true,
+            "imagen": "files_storage/productos/2025/06/30/10-mixer-novak.png",
+            "created_at": "2025-06-30T14:00:00Z",
+            "updated_at": "2025-06-30T14:30:00Z"
+        }
+    },
+    {
+        "model": "comercio.producto",
+        "pk": 11,
+        "fields": {
+            "sku": "MON-SAM-M50",
+            "codigo_barra": "0067564321334",
+            "categoria_id": 3,
+            "nombre_producto": "Monitores de estudio Samson M50",
+            "nombre_abreviado": "Monitores Samson M50",
+            "descripcion": "Monitores activos 5\", 50W (25W woofer + 25W tweeter). Respuesta 50Hz-20kHz. Entradas XLR/TRS/RCA. Control volumen frontal + ajuste HF. Optimizado para estudio.",
+            "precio_venta": 799000,
+            "disponible": true,
+            "imagen": "files_storage/productos/2025/06/30/11-monitores-samson.png",
+            "created_at": "2025-06-30T14:00:00Z",
+            "updated_at": "2025-06-30T14:30:00Z"
+        }
+    },
+    {
+        "model": "comercio.producto",
+        "pk": 12,
+        "fields": {
+            "sku": "MIC-SHU-SM58LC",
+            "codigo_barra": "0067564321365",
+            "categoria_id": 3,
+            "nombre_producto": "Shure SM58-LC Micrófono Vocal",
+            "nombre_abreviado": "Mic Shure SM58LC",
+            "descripcion": "Micrófono vocal dinámico cardioide. Respuesta optimizada para voces. Cápsula anti-golpes + filtro anti-pop. Conector XLR. Incluye soporte. Estándar profesional.",
+            "precio_venta": 399000,
+            "disponible": true,
+            "imagen": "files_storage/productos/2025/06/30/12-mic-vocal-shure.png",
+            "created_at": "2025-06-30T14:00:00Z",
+            "updated_at": "2025-06-30T14:30:00Z"
+        }
+    },
+    {
+        "model": "comercio.producto",
+        "pk": 13,
+        "fields": {
+            "sku": "PED-BOS-ME80",
+            "codigo_barra": "0056564321396",
+            "categoria_id": 4,
+            "nombre_producto": "Pedalera de efectos BOSS ME-80",
+            "nombre_abreviado": "Pedal BOSS ME80",
+            "descripcion": "Pedalera multiefectos con 8 secciones de efectos simultáneos (distorsión, modulación, delay, reverb, etc.). Interface intuitiva con controles físicos, expresión integrado, loop de fraseo y salida USB para grabación. Ideal para guitarristas en vivo.",
+            "precio_venta": 899000,
+            "disponible": true,
+            "imagen": "files_storage/productos/2025/07/02/producto_14.png",
+            "created_at": "2025-07-02T10:00:00Z",
+            "updated_at": "2025-07-02T10:30:00Z"
+        }
+    },
+    {
+        "model": "comercio.producto",
+        "pk": 14,
+        "fields": {
+            "sku": "TEC-YMH-P125",
+            "codigo_barra": "0056564321426",
+            "categoria_id": 1,
+            "nombre_producto": "Teclado Yamaha P-125",
+            "nombre_abreviado": "Teclado Ymha P125",
+            "descripcion": "Piano digital con teclado GHS con sensibilidad al tacto, 88 teclas. Sonidos de concierto Yamaha CFIIIS, 24 voces de polifonía, sistema de altavoces estéreo. Incluye pedal sostenuto, conexión USB y app de control. Ideal para práctica y presentaciones.",
+            "precio_venta": 1499000,
+            "disponible": true,
+            "imagen": "files_storage/productos/2025/07/02/producto_15.png",
+            "created_at": "2025-07-02T10:00:00Z",
+            "updated_at": "2025-07-02T10:30:00Z"
+        }
+    }
+]

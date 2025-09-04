@@ -1,0 +1,70 @@
+{% extends "usuarios/base.html" %}
+{% load static %}
+
+{% block content %}
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand navbar-dark bg-dark" style="display: block; flex-wrap: nowrap;">
+        <div class="container-fluid">
+                        
+            <!-- Botón de flecha para volver atrás -->
+            <a class="btn btn-dark" href="{% url 'dashboard' %}">
+                <i class="bi bi-arrow-left-circle"></i>
+            </a>
+
+            <div class="mx-auto text-white d-none d-md-block">
+                <span class="h5" style="text-decoration: underline;">{% block page_title %}Productos{% endblock %}</span>
+            </div>
+
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item d-none d-sm-block">
+                    <span class="nav-link text-white">
+                        {{ request.user.usuario.rol.nombre_rol }}&nbsp;&nbsp;&nbsp;&nbsp;|
+                    </span>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                        {{ request.user.usuario.ap_paterno }}
+                        {{ request.user.usuario.ap_materno }}, 
+                        {{ request.user.usuario.nombres }}
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><p class="dropdown-item">{{ request.user.usuario.rol.nombre_rol }}</p></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><p class="dropdown-item">{{ request.user.username }}</p></li>
+                        <li><p class="dropdown-item">{{ request.user.usuario.email }}</p></li>
+                        <li><p class="dropdown-item">{{ request.user.usuario.telefono }}</p></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li>
+                            <a id="logoutLink3" class="dropdown-item logout-btn" href="{% url 'cerrar_sesion' %}" data-logout-url="{% url 'cerrar_sesion' %}" onclick="return confirm('¿Está seguro de que desea cerrar sesión?')">
+                                Cerrar sesión <i class="bi bi-arrow-right-circle"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido de la vista products.html -->
+    {% block products_content %}
+        <!-- Contenido de edición de productos, filtros, búsqueda y edición  -->
+    {% endblock %}
+
+    <!-- Contenido de la vista stock.html -->
+    {% block stock_content %}
+        <!-- Contenido de edición de stock de productos en bodega -->
+    {% endblock %}
+
+    <!-- Contenido de la vista sucursales.html -->
+    {% block sucursales_content %}
+        <!-- Contenido de asignación de sucursales -->
+    {% endblock %}
+
+    <!-- Contenido de la vista cajas.html -->
+    {% block cajas_content %}
+        <!-- Contenido de asignación de cajas -->
+    {% endblock %}
+
+    <!-- Scripts específicos del dashboard -->
+    <script src="{% static 'js/script.js' %}"></script>
+{% endblock %}

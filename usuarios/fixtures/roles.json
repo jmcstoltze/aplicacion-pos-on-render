@@ -1,0 +1,26 @@
+[
+    {
+        "model": "usuarios.rol",
+        "pk": 1,
+        "fields": {
+            "nombre_rol": "Administrador",
+            "descripcion": "Acceso a todas las sucursales, asigna sucursales y cajas, edita productos, promociones y stock, asigna cajas, edita clientes, opera cajas y gestiona ventas."
+        }
+    },
+    {
+        "model": "usuarios.rol",
+        "pk": 2,
+        "fields": {
+            "nombre_rol": "Jefe de local",
+            "descripcion": "Acceso a sucursal asignada, edita stock de sucursal, asigna cajas de sucursal, edita clientes, opera cajas y gestiona ventas de sucursal."
+        }
+    },
+    {
+        "model": "usuarios.rol",
+        "pk": 3,
+        "fields": {
+            "nombre_rol": "Cajero",
+            "descripcion": "Edita clientes, opera caja asignada y gestiona sus ventas."
+        }
+    }
+]

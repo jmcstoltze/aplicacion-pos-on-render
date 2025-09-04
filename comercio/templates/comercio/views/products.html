@@ -1,0 +1,253 @@
+{% extends "comercio/nav_bar.html" %}
+{% load static %}
+
+{% block page_title %}Productos{% endblock %}
+
+{% block products_content %}
+
+<!-- Manejo de mensaje de error o éxito -->
+{% if messages %}
+    {% for message in messages %}
+        <script>
+            // Muestra un alert
+            alert("{{ message }}");
+        </script>
+    {% endfor %}
+{% endif %}
+
+<!-- Barra de búsqueda y filtros -->
+<div class="container-fluid bg-light py-2 shadow-sm">
+    <div class="row align-items-center">
+        <!-- Buscador -->
+        <div class="col-md-6 mb-2 mb-md-0">
+            <form method="get" action="">
+                <div class="input-group">
+                    <input type="text"
+                            class="form-control"
+                            placeholder="Buscar por nombre, SKU o Code..."
+                            name="search"
+                            value="{{ request.GET.search }}">
+                    <button class="btn btn-solid-orange" type="submit" id="searchButton">
+                        <i class="bi bi-search"></i> Buscar
+                    </button>
+                </div>
+            </form>
+        </div>
+    
+        <!-- Filtro por categoría -->            
+        <div class="col-md-4">
+            <form method="get" id="categoriaForm">
+                <select class="form-select" id="branchSelect" name="categoria" onchange="document.getElementById('categoriaForm').submit()">
+                    <option value="all" {% if not categoria_seleccionada or categoria_seleccionada == 'all' %}selected{% endif %}>Todas las categorías</option>
+                    {% for categoria in categorias %}
+                        <option value="{{ categoria.id }}" {% if categoria_seleccionada == categoria.id|stringformat:"s" %}selected{% endif %}>{{ categoria.nombre_categoria }}</option>
+                    {% endfor %}
+                </select>
+            </form>
+        </div>
+    
+        <!-- Contador de resultados -->
+        <div class="col-md-2 text-md-end">
+            <div style="padding-top: 8px;">
+                <a href="{% url 'stock_productos' %}">Modificar Stock</a>
+            </div>            
+            <small class="text-muted" id="resultCount">{{ productos|length }} productos</small>            
+        </div>
+            
+    </div>
+</div>
+
+<!-- Contenido principal - Cards de Productos -->
+<div class="container-fluid mt-4">
+    <!-- Botones flotantes para acciones agregar y editar -->
+    <div class="action-buttons">
+
+        <button class="btn btn-solid-orange btn-circle mb-3" data-bs-toggle="modal" data-bs-target="#addProductModal">
+            <i class="bi bi-plus-lg"></i>
+        </button>
+    
+        <button class="btn btn-black-edit btn-circle me-3" onclick="enableEditMode()">
+            <i class="bi bi-pencil"></i>
+        </button>            
+    </div>
+
+    <!-- Grid de productos -->        
+    <div id="productos-container" class="row justify-content-center row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 row-cols-xl-5 g-1">
+    {% for producto in productos %}
+        <!-- Tarjeta de producto -->
+        <div class="col">
+            <div class="card product-card h-100">
+                                
+                {% if producto.imagen %}
+                    <img src="{{ producto.imagen.url }}" class="card-img-top product-img" alt="{{ producto.nombre_producto }}">
+                {% else %}
+                    <div class="no-image-placeholder">
+                        <i class="bi bi-image text-muted"></i>
+                    </div>
+                {% endif %}                
+
+                <div class="card-body">
+                    <br>
+                    <h5 class="card-title">{{ producto.nombre_producto }}</h5>                
+                    {% load custom_filters %}
+                    <p class="card-text">Precio: ${{ producto.precio_venta|punto_miles }}</p>
+                    <small class="text-muted">Categoría: {{ producto.categoria.nombre_categoria }}</small><br>
+                    <small class="text-muted">Code: {{ producto.codigo_barra }}</small><br>
+                    <small class="text-muted">SKU: {{ producto.sku }}</small><br>
+                
+                    <div class="edit-buttons mt-2 d-none">
+                        <button class="btn btn-sm btn-solid-orange" 
+                            data-bs-toggle="modal" 
+                            data-bs-target="#editProductModal" 
+                                onclick="loadProductData(
+                                    '{{ producto.id }}',
+                                    '{{ producto.sku|escapejs }}',
+                                    '{{ producto.codigo_barra|escapejs }}',
+                                    '{{ producto.categoria.id }}',
+                                    '{{ producto.nombre_producto|escapejs }}',
+                                    '{{ producto.nombre_abreviado|escapejs }}',
+                                    '{{ producto.descripcion|escapejs }}',
+                                    '{{ producto.precio_venta }}'                            
+                                )">
+                            Editar
+                        </button>
+                        <form method="post" action="" style="display: inline;">
+                            {% csrf_token %}                            
+                            <input type="hidden" name="producto_id" value="{{ producto.id }}">
+                            <input type="hidden" name="deshabilitar_producto" value="true">
+                            <button type="submit" class="btn btn-sm btn-black-edit" onclick="return confirm('¿Está seguro que desea que este producto no esté disponible?')">Eliminar</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <br><br>
+</div>
+
+<!-- Modal para agregar producto -->
+<div class="modal fade" id="addProductModal" tabindex="-1" aria-labelledby="addProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addProductModalLabel">Agregar Nuevo Producto</h5>
+                <button type="button" class="btn-close custom-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="addProductForm" method="POST" action="" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="hidden" name="agregar_producto" value="1">
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <label for="productSKU" class="form-label">SKU</label>
+                            <input type="text" class="form-control" id="productSKU" name="productSKU" maxlength="80" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productCode" class="form-label">Código de Barra</label>
+                            <input type="text" class="form-control" id="productCode" name="productCode" maxlength="150" required>
+                        </div>                    
+                        <div class="mb-3">
+                            <label for="productCategory" class="form-label">Categoría</label>
+                            <select class="form-select" id="productCategory" name="productCategory" required>
+                                <option value="">Seleccione una categoría</option>
+                                {% for categoria in categorias %}                                
+                                <option value="{{ categoria.id }}">{{ categoria.nombre_categoria }}</option>
+                                {% endfor %}                                
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productName" class="form-label">Nombre del Producto</label>
+                            <input type="text" class="form-control" id="productName" name="productName" maxlength="150" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productAbrName" class="form-label">Nombre Abreviado</label>
+                            <input type="text" class="form-control" id="productAbrName" name="productAbrName" maxlength="80" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productDescp" class="form-label">Descripción</label>
+                            <textarea class="form-control" id="productDescp" name="productDescp" rows="5" maxlength="250" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="productPrice" class="form-label">Precio</label>
+                            <input type="text" class="form-control" id="productPrice" name="productPrice" maxlength="12" required>
+                        </div>                        
+                        <div class="mb-3">
+                            <label for="productImage" class="form-label">Imagen del Producto</label>
+                            <input class="form-control" type="file" id="productImage" name="productImage" accept="image/*">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-solid-orange" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-black-edit">Guardar Producto</button>
+                    </div>
+                </form>
+            </div>            
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Edición -->
+<div class="modal fade" id="editProductModal" tabindex="-1" aria-labelledby="editProductModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editProductModalLabel">Editar Producto</h5>
+                <button type="button" class="btn-close custom-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form id="editProductForm" method="POST" action="" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="hidden" name="editar_producto" value="1">
+                    <input type="hidden" id="editProductId" name="product_id">
+                    <div class="modal-body">                        
+                        <div class="mb-3">
+                            <label for="editProductSKU" class="form-label">SKU</label>
+                            <input type="text" class="form-control" id="editProductSKU" required readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductCode" class="form-label">Código de Barra</label>
+                            <input type="text" class="form-control" id="editProductCode" required readonly>
+                        </div>                    
+                        <div class="mb-3">
+                            <label for="editProductCategory" class="form-label">Categoría</label>
+                            <select class="form-select" id="editProductCategory" name="editProductCategory" required>
+                                <option value="">Seleccione una categoría</option>
+                                {% for categoria in categorias %}
+                                <option value="{{ categoria.id }}">{{ categoria.nombre_categoria }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductName" class="form-label">Nombre del Producto</label>
+                            <input type="text" class="form-control" id="editProductName" name="editProductName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductAbrName" class="form-label">Nombre Abreviado</label>
+                            <input type="text" class="form-control" id="editProductAbrName" name="editProductAbrName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductDescp" class="form-label">Descripción</label>
+                            <textarea class="form-control" id="editProductDescp" name="editProductDescp" rows="5" maxlength="250" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editProductPrice" class="form-label">Precio</label>
+                            <input type="text" class="form-control" id="editProductPrice" name="editProductPrice" required maxlength="12">
+                        </div>                                                
+                        <div class="mb-3">
+                            <label for="editProductImage" class="form-label">Imagen del Producto</label>
+                            <input class="form-control" type="file" id="editProductImage" name="editProductImage" accept="image/*">
+                        </div>                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-solid-orange px-4 py-2" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="submit" class="btn btn-black-edit px-4 py-2">Guardar Cambios</button>
+                    </div>
+                </form>                
+            </div>            
+        </div>
+    </div>
+</div>
+
+{% endblock %}

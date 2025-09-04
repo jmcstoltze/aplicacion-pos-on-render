@@ -1,0 +1,12 @@
+[
+    {
+        "model": "comercio.comercio",
+        "pk": 1,
+        "fields": {
+            "nombre_comercio": "Music Hall & Studio",
+            "razon_social": "Instrumentos musicales SPA",
+            "email": "contacto@musichallstudio.com",
+            "telefono": "569 8765 4321"
+        }
+    }
+]

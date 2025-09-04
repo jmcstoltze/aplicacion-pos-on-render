@@ -1,0 +1,554 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
+html, body{
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-cover {
+    background-image: url('../img/fondo-index.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+}
+
+/* Manejo de la imagen de fondo para pantallas pequeñas */
+@media (max-width: 768px) {
+    .bg-cover {
+        background-image: url('../img/fondo-index-mobile.jpg'); /* Versión móvil */
+        background-position: top center;
+    }
+}
+
+:root {
+
+
+    --color-white: white; /* Color de texto o fondo */
+    --color-black: black; 
+    --color-red: red;
+
+    --color-sidebar-shadow: rgba(0,0,0,0.1);
+    --color-sidebar-bottom: rgba(255,255,255,0.1);
+    --color-sidebar-li: rgba(255,255,255,0.2);
+
+    --color-orange-background: #f07520; /* Naranjo oscuro */
+    --color-orange-footer: #e06c1d; /* Diferencia de tono */
+    
+    --color-input-focus: #FFB347; /* Naranja pastel */
+    --color-input-shadow: rgba(255, 179, 71, 0.25); /* Sombra naranja pastel */
+
+    --color-shadow: rgba(0, 0, 0, 0.3); /* Sombra predeterminada */
+}
+
+.card {
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px var(--color-shadow);
+    width: 100%;
+    max-width: 450px; /* Tamaño de la card */
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card {
+        max-width: 80%; /* Ocupa el 80% del ancho de la pantalla */
+    }
+}
+    
+/* Estilo para los inputs cuando están enfocados */
+.form-control:focus {
+    border-color: var(--color-input-focus); 
+    box-shadow: 0 0 0 0.25rem var(--color-input-shadow);
+    outline: 0; /* Elimina el outline por defecto */
+}
+
+/* Botón personalizado */
+.btn-custom {
+    background-color: var(--color-orange-background);
+    border: none;
+    color: var(--color-white);
+}
+
+.btn-custom:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.btn-custom:focus {
+    background-color: var(--color-orange-background);
+    color: var(--color-white);
+    outline: 1px solid var(--color-input-shadow);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 3px var(--color-input-focus);
+}
+
+.logout-btn {
+    color: var(--color-white) !important;
+    background-color: var(--color-red) !important;
+}
+
+.logout-btn:hover {
+    background-color: var(--color-black) !important;
+}
+
+/* Estilos para el menú lateral */
+#sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: var(--color-orange-background); /* Naranja Principal */
+    position: fixed;
+    left: -250px;
+    top: 56px; /* Altura de la navbar */
+    transition: all 0.3s;
+    z-index: 1000;
+    box-shadow: 3px 0 10px var(--color-sidebar-shadow);
+}
+        
+#sidebar.active {
+    left: 0;
+}
+        
+.sidebar-header {
+    padding: 20px;
+    color: var(--color-white);
+    border-bottom: 1px solid var(--color-sidebar-bottom);
+}
+        
+.sidebar-menu {
+    padding: 0;
+    list-style: none;
+}
+        
+.sidebar-menu li {
+    padding: 10px 20px;
+    border-bottom: 1px solid var(--color-sidebar-li);
+    background-color: var(--color-orange-background); /* Fondo naranja */
+}
+        
+.sidebar-menu li a {
+    color: var(--color-white) !important;
+    text-decoration: none;
+    display: block;
+}
+
+/* Elimina los efectos hover */
+.sidebar-menu li:hover,
+.submenu li:hover {
+    background-color: var(--color-orange-background) !important; /* Mantiene el naranja */
+}
+
+.has-submenu:hover {
+    background-color: #e06c1d !important; /* No se está usando */
+}
+        
+.sidebar-menu li i {
+    margin-right: 10px;
+}
+
+/* Oculta el contenido cuando el sidebar está activo en móviles */
+@media (max-width: 768px) {
+    #content.sidebar-active {
+        display: none; /* Oculta completamente */
+    }
+    
+    /* Añade transición para efecto suave */
+    #content {
+        transition: all 0.3s ease;
+    }
+
+    #sidebar.active {
+        display: block;
+    }
+}
+
+/* Para pantallas grandes (>768px) */
+@media (min-width: 769px) {
+    .content.shifted {
+        margin-left: 250px;
+    }
+}
+        
+/* Ajuste del contenido cuando el menú está abierto */
+.content {
+    transition: margin-left 0.3s;
+    margin-left: 0;
+}
+        
+.content.shifted {
+    margin-left: 250px;
+}
+
+/* Estilos para los submenús */
+.has-submenu {
+    position: relative;
+}
+    
+.submenu {
+    display: none;
+    padding-left: 20px;
+    list-style: none;
+}
+    
+.submenu li {
+    padding: 8px 15px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+    
+.submenu li a {
+    color: white !important; /* Texto blanco */
+    font-size: 0.9em;
+}
+    
+.submenu-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Flechas indicadoras */
+.submenu-indicator {
+    color: white !important; /* Flecha blanca */
+}
+    
+.has-submenu.active .submenu-indicator {
+    transform: rotate(180deg);
+}
+    
+.has-submenu.active .submenu {
+    display: block;
+}
+
+/* Estado activo mantiene colores */
+.has-submenu.active {
+    background-color: #f07520 !important;
+}
+    
+.logout-menu-item {
+    color: white !important;
+    background-color: #f07520 !important; /* Mismo naranja */
+}
+
+/* Estilos para el footer */
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.footer-custom {
+    background-color: var(--color-orange-footer); /* Naranja */
+    height: 50px;
+    color: white;
+}
+
+/**********************/
+/* CARDS DE PRODUCTOS */
+/**********************/
+
+/* Búsqueda y filtros */
+#branchSelect {
+    background-color: var(--color-white); /* Color de fondo oscuro */
+    color: #2e2e2e;
+    border-radius: 5px;
+}
+
+#branchSelect:focus {
+    box-shadow: 0 0 0 0.25rem var(--color-input-shadow);
+    border: 0.5px solid var(--color-input-focus);
+}
+
+/* Personalización de las opciones */
+#branchSelect option {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+#branchSelectBodega {
+    background-color: var(--color-white); /* Color de fondo oscuro */
+    color: #2e2e2e;
+    border-radius: 5px;
+}
+
+#branchSelectBodega:focus {
+    box-shadow: 0 0 0 0.25rem var(--color-input-shadow);
+    border: 0.5px solid var(--color-input-focus);
+}
+
+/* Personalización de las opciones */
+#branchSelectBodega option {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+/* Ajuste para el contenido principal productos*/
+.content {
+    margin-bottom: 60px; /* Para que no quede tapado por el footer */
+}
+
+.product-card {
+    transition: transform 0.2s;
+    height: 100%;
+    min-height: 220px; /* Altura mínima fija */
+}
+        
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+        
+.product-img {
+    height: 120px; /* Altura imagen */
+    object-fit: contain;
+    padding: 5px;
+}
+
+/* Cuando no existe imagen para el producto */
+.no-image-placeholder {
+        width: 100%;
+        height: 200px; /* Ajusta esta altura según tus imágenes */
+        object-fit: cover;
+        background-color: #f8f9fa;
+    }
+    
+/* Estilos específicos para el placeholder */
+.no-image-placeholder {
+    display: flex !important; /* Forzamos display flex */
+    align-items: center;
+    justify-content: center;
+}
+    
+.no-image-placeholder i {
+    font-size: 7.5rem;
+    color: #6c757d;
+    line-height: 1; /* Elimina espacio adicional debajo del icono */
+}
+
+/* Para pantallas pequeñas (menos de 576px) */
+@media (max-width: 575.98px) {
+    .product-card {
+        max-width: 100%; /* Ajusta este valor según necesites */
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Opcional: Ajusta el tamaño de las imágenes en móviles */
+.product-img {
+    height: 180px;
+    object-fit: contain;
+}
+        
+.card-body {
+    padding: 0.75rem; /* Espaciado interno reducido */
+}
+        
+.card-title {
+    font-size: 0.9rem; /* Título más pequeño */
+    margin-bottom: 0.3rem;
+    height: 2.4rem; /* Altura fija para título */
+    overflow: hidden;
+}
+        
+.card-text {
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin-bottom: 0.2rem;
+}
+        
+.text-muted {
+    font-size: 0.75rem;
+}
+        
+.action-buttons {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 1000;
+}
+        
+.btn-circle {
+    width: 45px;
+    height: 45px;
+    padding: 8px 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 1.33;
+}
+        
+.edit-buttons .btn {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.3rem;
+}
+
+.btn-solid-orange {
+    color: white;
+    background-color: #f07520;
+    border-color: #f07520;
+}
+.btn-solid-orange:hover {
+    color:white;
+    background-color: #e06c1d;
+    border-color: #e06c1d;
+}
+
+.btn-solid-orange:active, 
+.btn-solid-orange.active {
+    color:white !important;
+    background-color: #f07520 !important;
+    border-color: #f07520 !important;
+    transform: none !important; /*Elimina el efecto de "presionado" */
+}
+
+.btn-solid-orange:focus {
+    background-color: var(--color-orange-background);
+    color: var(--color-white);
+    outline: 3px solid var(--color-input-shadow);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 3px var(--color-input-focus);
+}
+
+.btn-black-edit {
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+    
+.btn-black-edit:hover {
+    background-color: #2A2A2A;
+    color: white;
+    border-color: #2A2A2A;
+}
+    
+.btn-black-edit:active, 
+.btn-black-edit.active {
+    background-color: black !important;
+    color: white !important;
+    border-color: black !important;
+}
+    
+.btn-black-edit .bi {
+    color: white; /* Asegura que el icono sea negro */
+}
+
+.btn-black-edit:focus {
+    background-color: var(--color-black);
+    color: var(--color-white);
+    outline: 1px solid lightgray;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px lightgray;
+}
+
+/* Checkbox personalizado */
+.form-check-input:checked {
+    background-color: var(--color-orange-background);
+    border-color: var(--color-orange-background);
+}
+
+.form-check-input:focus {
+    box-shadow: 0 0 0 0.25rem var(--color-input-focus);
+    border-color: var(--color-input-focus);
+}
+
+.custom-close:focus {
+    outline: none;
+    border: 2px solid var(--color-input-focus);
+    box-shadow: 0 0 0 2px rgba(255, 102, 0, 0.25);   
+}
+
+/* Búsqueda y filtros Agregar*/
+#productCategory {
+    background-color: var(--color-white); /* Color de fondo oscuro */
+    color: #2e2e2e;
+    border-radius: 5px;
+}
+
+#productCategory:focus {
+    box-shadow: 0 0 0 0.25rem var(--color-input-shadow);
+    border: 0.5px solid var(--color-input-focus);
+}
+
+/* Personalización de las opciones */
+#productCategory option {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+/* Búsqueda y filtros Editar*/
+#editProductCategory {
+    background-color: var(--color-white); /* Color de fondo oscuro */
+    color: #2e2e2e;
+    border-radius: 5px;
+}
+
+#editProductCategory:focus {
+    box-shadow: 0 0 0 0.25rem var(--color-input-shadow);
+    border: 0.5px solid var(--color-input-focus);
+}
+
+/* Personalización de las opciones */
+#editProductCategory option {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+/* Asignación de sucursales y cajas */
+.bg-custom {
+    background-color: var(--color-orange-background);
+    color: white;
+}
+
+.active-custom {
+    background-color: black;
+    color: white;
+}
+
+.active-custom:hover {
+    background-color: var(--color-input-shadow);
+    color: black;
+    /* border-color: #2A2A2A;*/
+}
+
+.bg-custom-black {
+    background-color: black;
+}
+
+#sucursalSelect {
+    background-color: var(--color-white); /* Color de fondo oscuro */
+    color: #2e2e2e;
+    border-radius: 5px;
+}
+
+#sucursalSelect:focus {
+    box-shadow: 0 0 0 0.25rem var(--color-input-shadow);
+    border: 0.5px solid var(--color-input-focus);
+}
+
+/* Personalización de las opciones */
+#sucursalSelect option {
+    background: var(--color-white);
+    color: var(--color-black);
+}
+
+#cajaSelect {
+    background-color: var(--color-white); /* Color de fondo oscuro */
+    color: #2e2e2e;
+    border-radius: 5px;
+}
+
+#cajaSelect:focus {
+    box-shadow: 0 0 0 0.25rem var(--color-input-shadow);
+    border: 0.5px solid var(--color-input-focus);
+}
+
+/* Personalización de las opciones */
+#cajaSelect option {
+    background: var(--color-white);
+    color: var(--color-black);
+}

@@ -1,0 +1,434 @@
+[
+    {
+        "model": "comercio.stockbodega",
+        "pk": 1,
+        "fields": {
+            "producto": 1,
+            "bodega": 1,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 2,
+        "fields": {
+            "producto": 1,
+            "bodega": 2,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 3,
+        "fields": {
+            "producto": 1,
+            "bodega": 3,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 4,
+        "fields": {
+            "producto": 1,
+            "bodega": 4,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 5,
+        "fields": {
+            "producto": 2,
+            "bodega": 1,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 6,
+        "fields": {
+            "producto": 2,
+            "bodega": 2,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 7,
+        "fields": {
+            "producto": 2,
+            "bodega": 3,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 8,
+        "fields": {
+            "producto": 2,
+            "bodega": 4,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 9,
+        "fields": {
+            "producto": 3,
+            "bodega": 1,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 10,
+        "fields": {
+            "producto": 3,
+            "bodega": 2,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 11,
+        "fields": {
+            "producto": 3,
+            "bodega": 3,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 12,
+        "fields": {
+            "producto": 3,
+            "bodega": 4,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 13,
+        "fields": {
+            "producto": 4,
+            "bodega": 1,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 14,
+        "fields": {
+            "producto": 4,
+            "bodega": 2,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 15,
+        "fields": {
+            "producto": 4,
+            "bodega": 3,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 16,
+        "fields": {
+            "producto": 4,
+            "bodega": 4,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 17,
+        "fields": {
+            "producto": 5,
+            "bodega": 1,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 18,
+        "fields": {
+            "producto": 5,
+            "bodega": 2,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 19,
+        "fields": {
+            "producto": 5,
+            "bodega": 3,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 20,
+        "fields": {
+            "producto": 5,
+            "bodega": 4,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 21,
+        "fields": {
+            "producto": 6,
+            "bodega": 1,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 22,
+        "fields": {
+            "producto": 6,
+            "bodega": 2,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 23,
+        "fields": {
+            "producto": 6,
+            "bodega": 3,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 24,
+        "fields": {
+            "producto": 6,
+            "bodega": 4,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 25,
+        "fields": {
+            "producto": 7,
+            "bodega": 1,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 26,
+        "fields": {
+            "producto": 7,
+            "bodega": 2,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 27,
+        "fields": {
+            "producto": 7,
+            "bodega": 3,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 28,
+        "fields": {
+            "producto": 7,
+            "bodega": 4,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 29,
+        "fields": {
+            "producto": 8,
+            "bodega": 1,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 30,
+        "fields": {
+            "producto": 8,
+            "bodega": 2,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 31,
+        "fields": {
+            "producto": 8,
+            "bodega": 3,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 32,
+        "fields": {
+            "producto": 8,
+            "bodega": 4,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 33,
+        "fields": {
+            "producto": 9,
+            "bodega": 1,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 34,
+        "fields": {
+            "producto": 9,
+            "bodega": 2,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 35,
+        "fields": {
+            "producto": 9,
+            "bodega": 3,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 36,
+        "fields": {
+            "producto": 9,
+            "bodega": 4,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 37,
+        "fields": {
+            "producto": 10,
+            "bodega": 1,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 38,
+        "fields": {
+            "producto": 10,
+            "bodega": 2,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 39,
+        "fields": {
+            "producto": 10,
+            "bodega": 3,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 40,
+        "fields": {
+            "producto": 10,
+            "bodega": 4,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 41,
+        "fields": {
+            "producto": 11,
+            "bodega": 1,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 42,
+        "fields": {
+            "producto": 11,
+            "bodega": 2,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 43,
+        "fields": {
+            "producto": 11,
+            "bodega": 3,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 44,
+        "fields": {
+            "producto": 11,
+            "bodega": 4,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 45,
+        "fields": {
+            "producto": 12,
+            "bodega": 1,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 46,
+        "fields": {
+            "producto": 12,
+            "bodega": 2,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 47,
+        "fields": {
+            "producto": 12,
+            "bodega": 3,
+            "stock": 100
+        }
+    },
+    {
+        "model": "comercio.stockbodega",
+        "pk": 48,
+        "fields": {
+            "producto": 12,
+            "bodega": 4,
+            "stock": 100
+        }
+    }
+]

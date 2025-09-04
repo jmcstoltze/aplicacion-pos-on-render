@@ -1,0 +1,38 @@
+[
+    {
+        "model": "comercio.categoria",
+        "pk": 1,
+        "fields": {
+            "nombre_categoria": "Instrumentos musicales",
+            "descripcion": "Guitarras, bajos, eléctricos y acústicos.",
+            "created_at": "2025-06-15T15:00:00Z"
+        }
+    },
+    {
+        "model": "comercio.categoria",
+        "pk": 2,
+        "fields": {
+            "nombre_categoria": "Amplificadores",
+            "descripcion": "Amplificadores para instrumentos.",
+            "created_at": "2025-06-15T15:00:00Z"
+        }
+    },
+    {
+        "model": "comercio.categoria",
+        "pk": 3,
+        "fields": {
+            "nombre_categoria": "Estudio de grabación",
+            "descripcion": "Equipamiento para estudios de grabación.",
+            "created_at": "2025-06-15T15:00:00Z"
+        }
+    },
+    {
+        "model": "comercio.categoria",
+        "pk": 4,
+        "fields": {
+            "nombre_categoria": "Multiefectos",
+            "descripcion": "Pedales de efectos y multiefectos",
+            "created_at": "2025-06-15T15:00:00Z"
+        }
+    }
+]

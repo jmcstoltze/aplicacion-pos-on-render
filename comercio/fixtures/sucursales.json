@@ -1,0 +1,67 @@
+[
+    {
+        "model": "comercio.sucursal",
+        "pk": 1,
+        "fields": {
+            "nombre_sucursal": "Sucursal Centro",
+            "email": "contacto_centro@musichallstudio.com",
+            "telefono": "569 8765 4321",
+            "direccion": "Avenida Central 456",
+            "es_casa_matriz": true,
+            "esta_asignada": true,
+            "jefe_asignado": 2,
+            "comercio_id": 1,
+            "comuna": 284
+        }
+    },
+    {
+        "model": "comercio.sucursal",
+        "pk": 2,
+        "fields": {
+            "nombre_sucursal": "Sucursal Norte",
+            "email": "contacto_norte@musichallstudio.com",
+            "telefono": "569 8765 4321",
+            "direccion": "Avenida Norte 456",            
+            "comercio_id": 1,
+            "comuna": 262
+        }
+    },
+    {
+        "model": "comercio.sucursal",
+        "pk": 3,
+        "fields": {
+            "nombre_sucursal": "Sucursal Oriente",
+            "email": "contacto_oriente@musichallstudio.com",
+            "telefono": "569 8765 4321",
+            "direccion": "Avenida Oriente 456",
+            "esta_asignada": true,
+            "jefe_asignado": 3,           
+            "comercio_id": 1,
+            "comuna": 278
+        }
+    },
+    {
+        "model": "comercio.sucursal",
+        "pk": 4,
+        "fields": {
+            "nombre_sucursal": "Sucursal Sur",
+            "email": "contacto_sur@musichallstudio.com",
+            "telefono": "569 8765 4321",
+            "direccion": "Avenida Sur 456",            
+            "comercio_id": 1,
+            "comuna": 265
+        }
+    },
+    {
+        "model": "comercio.sucursal",
+        "pk": 5,
+        "fields": {
+            "nombre_sucursal": "Sucursal Poniente",
+            "email": "contacto_poniente@musichallstudio.com",
+            "telefono": "569 8877 6655",
+            "direccion": "Avenida Poniente 333",            
+            "comercio_id": 1,
+            "comuna": 261
+        }
+    }
+]

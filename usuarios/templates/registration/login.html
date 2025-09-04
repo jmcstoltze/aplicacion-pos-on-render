@@ -1,0 +1,31 @@
+{% extends "usuarios/base.html" %}
+{% load static %}
+
+{% block title %}Prototipo POS{% endblock %}
+
+{% block content %}
+<div class="bg-cover d-flex justify-content-center align-items-center">
+    <div class="card">
+        <h4 class="text-center mb-4">Inicio de Sesión</h4>
+        
+        {% if error_message %}
+        <div class="alert alert-danger mb-3">
+            {{ error_message }}
+        </div>
+        {% endif %}
+                
+        <form method="post" action="{% url 'inicio_sesion' %}">
+            {% csrf_token %}
+            <div class="mb-3">
+                <label for="username" class="form-label">Nombre de usuario</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="Ingrese usuario">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" name="password" placeholder="Ingrese contraseña">
+            </div>
+            <button type="submit" class="btn btn-custom w-100">Ingresar</button>
+        </form>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,161 @@
+{% extends "comercio/nav_bar.html" %}
+{% load static %}
+
+{% block page_title %}Cajas{% endblock %}
+
+{% block cajas_content %}
+
+    <!-- Selector de sucursal -->
+    <div class="container-fluid bg-secondary py-2">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-end">
+                <div class="dropdown">
+                    <button class="btn btn-sm btn-outline-light dropdown-toggle" type="button" id="dropdownSucursal" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-shop me-1"></i> Sucursal: Centro
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownSucursal">
+                        <li><a class="dropdown-item" href="#">Centro</a></li>
+                        <li><a class="dropdown-item" href="#">Norte</a></li>
+                        <li><a class="dropdown-item" href="#">Sur</a></li>
+                        <li><a class="dropdown-item" href="#">Oriente</a></li>
+                        <li><a class="dropdown-item" href="#">Poniente</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-4">
+        <!-- Pestaña única -->
+        <ul class="nav nav-tabs" id="adminTabs" role="tablist">           
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="cajeros-tab" data-bs-toggle="tab" data-bs-target="#cajeros" type="button" role="tab">
+                    <i class="bi bi-cash-coin me-2"></i>Asignar Cajas
+                </button>
+            </li>
+        </ul>
+
+        <!-- Contenido de la pestaña -->
+        <div class="tab-content p-3 border border-top-0 rounded-bottom shadow-sm bg-white">
+
+            <!-- Pestaña de Cajeros -->
+            <div class="tab-pane fade show active" id="cajeros" role="tabpanel">
+                <div class="row justify-content-center">
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 mb-4">
+                        <div class="card mb-4">
+                            <div class="card-header bg-custom text-white">
+                                <h5 class="mb-0">Cajeros</h5>
+                            </div>
+                            <div class="card-body">
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" placeholder="Buscar..." id="searchCajeros">
+                                    <button class="btn btn-outline-secondary" type="button">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </div>
+                                <div class="list-group" style="max-height: 400px; overflow-y: auto;">
+                                    <a href="#" class="list-group-item list-group-item-action cajero-item">
+                                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+                                            <div class="me-4">
+                                                Pérez López, Juan
+                                            </div>
+                                            <span class="badge bg-custom">Caja 1</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action cajero-item active-custom">
+                                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+                                            <div class="me-4">
+                                                García Martín, Sofía
+                                            </div>
+                                            <span class="badge bg-secondary">Sin asignar</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action cajero-item">
+                                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+                                            <div class="me-4">
+                                                Ruiz, David Sánchez
+                                            </div>
+                                            <span class="badge bg-custom">Caja 3</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="list-group-item list-group-item-action cajero-item">
+                                        <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+                                            <div class="me-4">
+                                                Díaz Fernández, Elena
+                                            </div>
+                                            <span class="badge bg-custom">Caja 2</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4 mb-4">
+                        <div class="card">
+                            <div class="card-header bg-custom-black text-white">
+                                <h5 class="mb-0">Asignar Caja</h5>
+                            </div>
+                            <div class="card-body">
+                                <form id="asignarCajaForm">
+                                    <div class="mb-3">
+                                        <label class="form-label">Cajero seleccionado:</label>
+                                        <div class="form-control">García Martín, Sofía</div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="cajaSelect" class="form-label">Caja:</label>
+                                        <select class="form-select" id="cajaSelect" name="caja_id" required>
+                                            <option value="">Seleccione una caja</option>
+                                            <option value="1">Caja 1</option>
+                                            <option value="2">Caja 2</option>
+                                            <option value="3">Caja 3</option>
+                                            <option value="4">Caja 4</option>
+                                        </select>
+                                    </div>
+                                    <button type="button" class="btn btn-solid-orange" data-bs-toggle="modal" data-bs-target="#confirmModal">
+                                        <i class="bi bi-save me-2"></i>Guardar Cambios
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>                
+                </div>        
+            </div>            
+        </div>
+
+        <!-- Botón para ir a asignar sucursal -->
+        <div class="row">
+            <div class="col-md-6 col-sm-6"></div>
+            <div class="col-md-6 col-sm-6">
+                <div class="position-sm-absolute bottom-0 end-0 me-3 mt-4 mb-4">
+                    <a href="{% url 'asignacion_sucursales' %}" class="btn btn-solid-orange">
+                        <i class="bi bi-send me-2"></i>Ir a asignar sucursales
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <br><br>
+
+    </div>
+
+    <!-- Modal de confirmación -->
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Confirmación</h5>
+                    <button type="button" class="btn-close custom-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ¿Está seguro de asignar <strong>Caja 1 (Sucursal Centro)</strong> a <strong>García Martín, Sofía</strong>?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-solid-orange">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

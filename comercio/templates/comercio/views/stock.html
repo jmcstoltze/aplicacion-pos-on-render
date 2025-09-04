@@ -1,0 +1,160 @@
+{% extends "comercio/nav_bar.html" %}
+{% load static %}
+
+{% block page_title %}Stock{% endblock %}
+
+{% block stock_content %}
+
+    <!-- Barra de búsqueda y filtros -->
+    <div class="container-fluid bg-light py-2 shadow-sm">
+        <div class="row align-items-center">
+
+            <!-- Filtro por sucursal -->
+            <div class="col-md-6">
+                <form method="get" id="bodegaForm">
+                    <select class="form-select" id="branchSelectBodega"
+                    name="bodega" onchange="document.getElementById('bodegaForm').submit()">
+                        <option value="all" {% if not bodega_seleccionada or bodega_seleccionada == 'all' %}selected{% endif %}>Todas las bodegas</option>
+                        {% for bodega in bodegas %}
+                            <option value="{{ bodega.id }}" {% if bodega_seleccionada == bodega.id|stringformat:"s" %}selected{% endif %}>{{ bodega.nombre_bodega }}</option>
+                        {% endfor %}                        
+                    </select>                
+                </form>
+            </div>            
+
+            <div class="col-md-3" style="padding-top: 8px;">
+                <a href="{% url 'edicion_productos' %}">Editar Productos</a>
+            </div> 
+
+            <!-- Contador de resultados -->
+            <div class="col-md-3 text-md-end"> 
+                <small class="text-muted" id="resultCount">{{ total_productos }} productos</small><br>
+                <small class="text-muted" id="resultCount">{{ productos_con_stock }} productos con stock</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido principal - Tabla de stock -->
+    <div class="container-fluid mt-4">
+        <form method="post" action="" id="formMasivo">
+            {% csrf_token %}
+            <input type="hidden" name="bodega_id" value="{{ bodega_seleccionada }}">
+            <div class="table-responsive">
+                <table class="table table-hover table-bordered bg-white">
+                    <thead class="table-dark">
+                        <tr>
+                            <th width="10%" class="d-none d-sm-table-cell">Imagen</th>
+                            <th width="35%">Producto</th>
+                            <th width="10%" class="d-none d-sm-table-cell">Status</th>
+                            <th width="20%" class="d-none d-lg-table-cell">SKU</th>
+                            <th width="10%">Stock</th>
+                            <th width="10%">Ajuste</th>                        
+                            <th width="5%">Aplicar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productos-container">
+                        <!-- Productos -->                    
+                        {% for producto in productos %}
+                        <tr>
+                            <td class="align-middle text-center d-none d-sm-table-cell">
+                                {% if producto.imagen %}
+                                    <img src="{{ producto.imagen.url }}" class="img-thumbnail" style="max-height: 60px;">
+                                {% else %}
+                                    <div class="no-image-placeholder">
+                                        <i class="bi bi-image text-muted"></i>
+                                    </div>                    
+                                {% endif %}
+                            </td>                        
+                            <td class="align-middle">{{ producto.nombre_producto }}</td>
+
+                            <!-- Status del producto -->
+                            <input type="hidden" name="producto_id" value="{{ producto.id }}">
+                            <input type="hidden" name="habilitar_producto" value="true">
+                            {% if producto.disponible %}
+                                <td class="align-middle d-none d-sm-table-cell">
+                                    Disponible
+                                </td>
+                            {% else %}
+                                <td class="align-middle d-none d-sm-table-cell" style="background-color: lightcoral; color: white; cursor: pointer;">
+                                    {% if request.user.usuario.rol.nombre_rol == 'Administrador' %}
+                                        <a href="{% url 'stock_productos' %}?habilitar_producto={{producto.id}}" style="text-decoration: none; color: white;" onclick="return confirm('¿Está seguro que desea volver a habilitar el producto?')">
+                                            No disponible         
+                                        </a>
+                                    {% else %}
+                                        No disponible
+                                    {% endif %}                         
+                                </td>                                
+                            {% endif %}
+                            
+                            <td class="align-middle d-none d-lg-table-cell">{{ producto.sku }}</td>
+                            <td class="align-middle">
+                                {% if bodega_seleccionada == 'all' %}
+                                    {{ producto.stock_total|default:0 }}
+                                {% else %}
+                                    {{ producto.stock_bodega|default:0 }}
+                                {% endif %}
+                            </td>
+                            <td class="align-middle">
+                                <div class="input-group">                                
+                                    <input type="number"
+                                            class="form-control form-control-sm"
+                                            name="ajuste_{{ producto.id }}"
+                                            value="0" min="-9999" max="9999">
+                                </div>
+                            </td>                        
+                            <td class="align-middle text-center">
+                                <!-- Botón aplicar o guardar con ícono -->
+                                <button type="submit"
+                                        name="producto_id"
+                                        value="{{ producto.id }}"
+                                        class="btn btn-sm btn-solid-orange"
+                                        title="Guardar cambios">
+                                    <i class="bi bi-save"></i>
+                                </button>
+                            </td>                        
+                        </tr>
+                        {% endfor %}                                        
+                    </tbody>
+                </table>
+            </div>
+        
+            <!-- Botones de acciones masivas -->
+            <div class="row mt-3">
+                <div class="col-5">
+                    <!-- Botón eliminado Exportar CSV -->
+                </div>
+
+                <!-- Botón para guardar todos -->
+                <div class="col-7">
+                    <button type="submit"
+                            name="guardar_todos"
+                            value="1"
+                            class="btn btn-solid-orange"
+                            style="min-width: 250px;">
+                        <i class="bi bi-check-circle"></i> Aplicar todos los cambios
+                    </button>
+                </div>
+            </div>
+        </form>
+
+        <!-- Mostrar mensajes -->
+        {% if messages %}
+        <div class="position-fixed top-0 end-0 p-3" style="z-index: 1100;">
+            {% for message in messages %}
+            <div class="alert alert-{% if message.tags == 'error' %}danger{% else %}{{ message.tags }}{% endif %} alert-dismissible fade show">
+                {% if message.tags == 'success' %}
+                <i class="bi bi-check-circle-fill me-2"></i>
+                    {% elif message.tags == 'error' %}
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    {% endif %}
+                    {{ message }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+    </div>
+    <br><br> 
+
+{% endblock %}

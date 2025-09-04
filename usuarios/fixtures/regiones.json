@@ -1,0 +1,114 @@
+[
+    {
+        "model": "usuarios.region",
+        "pk": 1,
+        "fields": {
+            "nombre_region": "I Región Tarapacá"
+        }
+    },
+    {
+        "model": "usuarios.region",
+        "pk": 2,
+        "fields": {
+            "nombre_region": "II Región Antofagasta"
+        }
+    },
+    {
+        "model": "usuarios.region",
+        "pk": 3,
+        "fields": {
+            "nombre_region": "III Región de Atacama"
+        }
+    },
+    {
+        "model": "usuarios.region",
+        "pk": 4,
+        "fields": {
+            "nombre_region": "IV Región de Coquimbo"
+        }
+    },
+    {
+        "model": "usuarios.region",
+        "pk": 5,
+        "fields": {
+            "nombre_region": "V Región de Valparaíso"
+        }
+    },
+    {
+        "model": "usuarios.region",
+        "pk": 6,
+        "fields": {
+            "nombre_region": "VI Región del Libertador Gral. Bernardo O'Higgins"
+        }
+    },
+    {
+        "model": "usuarios.region",
+        "pk": 7,
+        "fields": {
+            "nombre_region": "VII Región del Maule"
+        }
+    },
+    {
+        "model": "usuarios.region",
+        "pk": 8,
+        "fields": {
+            "nombre_region": "VIII Región del Biobío"
+        }
+    },
+    {
+        "model": "usuarios.region",
+        "pk": 9,
+        "fields": {
+            "nombre_region": "IX Región de La Araucanía"
+        }
+    },
+    {
+        "model": "usuarios.region",
+        "pk": 10,
+        "fields": {
+            "nombre_region": "X Región de Los Lagos"
+        }
+    },
+    {
+        "model": "usuarios.region",
+        "pk": 11,
+        "fields": {
+            "nombre_region": "XI Región de Aysén"
+        }
+    },
+    {
+        "model": "usuarios.region",
+        "pk": 12,
+        "fields": {
+            "nombre_region": "XII Región de Magallanes"
+        }
+    },
+    {
+        "model": "usuarios.region",
+        "pk": 13,
+        "fields": {
+            "nombre_region": "Región Metropolitana de Santiago"
+        }
+    },
+    {
+        "model": "usuarios.region",
+        "pk": 14,
+        "fields": {
+            "nombre_region": "XIV Región de Los Ríos"
+        }
+    },
+    {
+        "model": "usuarios.region",
+        "pk": 15,
+        "fields": {
+            "nombre_region": "XV Región de Arica y Parinacota"
+        }
+    },
+    {
+        "model": "usuarios.region",
+        "pk": 16,
+        "fields": {
+            "nombre_region": "XVI Región del Ñuble"
+        }
+    }
+]
